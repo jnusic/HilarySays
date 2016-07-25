@@ -1,0 +1,20 @@
+{
+  "name": "HilarySays",
+  "version": "1.0.0",
+  "description": "\"# poliwhy\"",
+  "main": "getKeyWordsFromPage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnusic/HilarySays.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnusic/HilarySays/issues"
+  },
+  "homepage": "https://github.com/jnusic/HilarySays#readme"
+}
