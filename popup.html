@@ -7,95 +7,9 @@
 <html>
   <head>
     <title>HilarySays</title>
-
+    <link rel='stylesheet' type="text/css" href="popup.css">
     <!-- Not sure why I'm keeping CSS here but alas here it is...-->
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-        width: 300px;
-        height: 400px;
-        display: flex;
-        flex-direction:column;
-        background-color: #EEEEEE;
-        margin: 0; 
-      }
-      .arrow_candidate {
-        width: 100px;
-      }
-      .button {
-        height: 35px;
-        width: 35px; 
-        border-radius: 50%; 
-        justify-content:flex-end;
-        display: flex;
-        margin: auto 6px auto auto;
-        background-image:url("arrow.png");
-        background-size: 100%;
-      }
-      .button_trump {
-        background-size: 100%;
-        background-image:url("arrow3.png");
-        height: 35px;
-        width: 35px; 
-        border-radius: 50%;
-        margin-top: 35px;
-        float: right;
-        margin-right: 6px;
-      }
-      .button_trump:hover {
-        cursor: pointer;
-        background-image: url("arrow4.png");
-      }
-      .button:hover {
-        background-image:url("arrow2.png");
-      }
-      #empty {
-        display: none;
-        flex-grow:0;
-        color: #607D8B;
-        margin: auto;
-      }
-      .header {
-        height: 100px; 
-        background-color: #FFF;
-        display: flex;
-        flex-direction:row;
-      }
-      .primary {
-        background-color: #00A9E0;
-      }
-      .primary-dark {
-        background-color: #003A94;
-      }
-      .tag {
-        margin: auto 0 auto 10px;
-        font-size: 1.275em;
-        display: flex;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;    
-        flex-shrink:1;    
-      }
-      #center {
-        margin: auto;
-        flex-wrap:wrap;
-        flex-grow:0;
-      }
-      .row {
-        width: 100%;
-        height: 66px;
-        margin-top:1px;
-        background-color: #FFFFFF;
-        display: flex;
-        flex-direction:row;
-      }
-
-
-    </style>
+    
 
     <!--
       - JavaScript and HTML must be in separate files: see our Content Security
@@ -109,52 +23,91 @@
 
   <!--Start of HTML-->
   <body>
-    <div class="header">
-      <div>
-        <p id='onWindowLoadText'></p>
-      </div>
+    <div>
+        <div class="header">
+          <div class="arrow_candidate">
+          </div>
+          <img id="header_img" src="logo_no_circle.png" alt="Hilary Clinton Logo" style="height:99%;margin:auto;flex:1;">
+          <div class="arrow_candidate"></div>
+        
+        </div>
 
-      <div class="arrow_candidate"></div>
+      <div class='results_body'>
 
-      <img id="header_img" src="logo_no_circle.png" alt="Hilary Clinton Logo" style="height:99%;margin:auto;flex:1;">
+        <div class="row" id="row0">
+          <div class="tag">
+            <p style="color:#003A94">#</p>
+            <p id="tagText0"></p>
+          </div>
+          <div class="button primary" id="link0"></div>
+        </div>
 
-      <div class="arrow_candidate"></div>
+        <div class="row" id="row1">
+          <div class="tag">
+            <p style="color:#003A94">#</p>
+            <p id="tagText1"</p>
+          </div>
+          <div class="button primary" id="link1"></div>
+        </div>
+
+        <div class="row" id="row2">
+          <div class="tag">
+            <p style="color:#003A94">#</p>
+            <p id="tagText2"></p>
+          </div>
+          <div class="button primary" id="link2"></div>
+        </div>
+
+        <div class="row" id="row3">
+          <div class="tag">
+            <p style="color:#003A94">#</p>
+            <p id="tagText3"></p>
+          </div>
+          <div class="button primary" id="link3"></div>
+        </div>
+
+        <div class="row" id="row4">
+          <div class="tag">
+            <p style="color:#003A94">#</p>
+            <p id="tagText4"></p>
+          </div>
+          <div class="button primary" id="link4"></div>
+        </div>
+
+        <div class="row" id="row5">
+          <div class="tag">
+            <p style="color:#003A94">#</p>
+            <p id="tagText5"></p>
+          </div>
+          <div class="button primary" id="link5"></div>
+        </div>
+
+        <div class="row" id="row6">
+          <div class="tag">
+            <p style="color:#003A94">#</p>
+            <p id="tagText6"></p>
+          </div>
+          <div class="button primary" id="link6"></div>
+        </div>
+
+        <div class="row" id="row7">
+          <div class="tag">
+            <p style="color:#003A94">#</p>
+            <p id="tagText7"></p>
+          </div>
+          <div class="button primary" id="link7"></div>
+        </div>
+
+
+        </div>
     </div>
-
-    <div class="row" id="row1">
-      <div class="tag"><div style="color:#003A94">#</div>
-      <div id="tagText1"></div>
-      <div class="button primary" id="link1"></div>
-    </div>
-
-    <div class="row" id="row2">
-      <div class="tag"><div style="color:#003A94">#</div>
-      <div id="tagText2"></div>
-      <div class="button primary" id="link2"></div>
-    </div>
-
-    <div class="row" id="row3">
-      <div class="tag"><div style="color:#003A94">#</div>
-      <div id="tagText3"></div>
-      <div class="button primary" id="link3"></div>
-    </div>
-
-    <div class="row" id="row4">
-      <div class="tag"><div style="color:#003A94">#</div>
-      <div id="tagText4"></div>
-      <div class="button primary" id="link4"></div>
-    </div>
-
-    <div class="row" id="row5">
-      <div class="tag"><div style="color:#003A94">#</div>
-      <div id="tagText5"></div>
-      <div class="button primary" id="link5"></div>
-    </div>
-
+    
+    <div id="empty">Nothing To See Here!</div>
+    
   </body>
 
 
-  <div id="empty">Nothing To See Here!</div>
+  
 
 
   <footer>

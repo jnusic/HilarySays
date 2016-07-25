@@ -1,0 +1,126 @@
+
+  body{
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 100%;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction:column;
+    background-color: #EEEEEE;
+    margin: 0; 
+  }
+  .arrow_candidate {
+    width: 100px;
+  }
+  .button {
+    height: 35px;
+    width: 35px; 
+    border-radius: 50%; 
+    justify-content:flex-end;
+    display: flex;
+    margin: auto 6px auto auto;
+    background-image:url("arrow.png");
+    background-size: 100%;
+  }
+  .button_trump {
+    background-size: 100%;
+    background-image:url("arrow3.png");
+    height: 35px;
+    width: 35px; 
+    border-radius: 50%;
+    margin-top: 35px;
+    float: right;
+    margin-right: 6px;
+  }
+  .button_trump:hover {
+    cursor: pointer;
+    background-image: url("arrow4.png");
+  }
+  .button:hover {
+    background-image:url("arrow2.png");
+  }
+  #empty {
+    display: inline;
+    flex-grow:0;
+    color: #607D8B;
+    margin: auto;
+  }
+  .header {
+    height: 100px; 
+    background-color: #FFF;
+    display: flex;
+    flex-direction:row;
+  }
+  .primary {
+    background-color: #00A9E0;
+  }
+  .primary-dark {
+    background-color: #003A94;
+  }
+  .tag {
+    margin: auto 0 auto 10px;
+    font-size: 1.275em;
+    display: flex;
+  }
+  #status {
+    /* avoid an excessively wide status text */
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;    
+    flex-shrink:1;    
+  }
+  #center {
+    margin: auto;
+    flex-wrap:wrap;
+    flex-grow:0;
+  }
+  .row {
+    width: 100%;
+    height: 66px;
+    margin-top:1px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction:row;
+  }
+  .results_body{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+  
+  #row0{
+    display: none;
+  }
+  
+  #row1{
+    display: none;
+  }
+  
+  #row2{
+    display: none;
+  }
+  
+  #row3{
+    display: none;
+  }
+  
+  #row4{
+    display: none;
+  }
+  
+  #row5{
+    display: none;
+  }
+  
+  #row6{
+    display: none;
+  }
+  
+  #row7{
+    display: none;
+  }
+
+
+  
