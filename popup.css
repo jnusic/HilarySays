@@ -19,25 +19,11 @@
     justify-content:flex-end;
     display: flex;
     margin: auto 6px auto auto;
-    background-image:url("arrow.png");
+    background-image:url("assets/arrow.png");
     background-size: 100%;
-  }
-  .button_trump {
-    background-size: 100%;
-    background-image:url("arrow3.png");
-    height: 35px;
-    width: 35px; 
-    border-radius: 50%;
-    margin-top: 35px;
-    float: right;
-    margin-right: 6px;
-  }
-  .button_trump:hover {
-    cursor: pointer;
-    background-image: url("arrow4.png");
   }
   .button:hover {
-    background-image:url("arrow2.png");
+    background-image:url("assets/arrow2.png");
   }
   #empty {
     display: inline;
