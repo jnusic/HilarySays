@@ -19,11 +19,11 @@
     justify-content:flex-end;
     display: flex;
     margin: auto 6px auto auto;
-    background-image:url("assets/arrow.png");
+    background-image:url("arrow.png");
     background-size: 100%;
   }
   .button:hover {
-    background-image:url("assets/arrow2.png");
+    background-image:url("arrow2.png");
   }
   #empty {
     display: inline;
