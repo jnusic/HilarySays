@@ -9,6 +9,13 @@
     background-color: #EEEEEE;
     margin: 0; 
   }
+  .ampersand_color {
+    color: #FFF;
+  }
+  .ampersand_color_mini {
+    color: #035ca0;
+    margin-left: 27px;
+  }
   .arrow_candidate {
     width: 100px;
   }
@@ -25,6 +32,20 @@
   .button:hover {
     background-image:url("arrow2.png");
   }
+  .display-bar-left {
+   /* background-image: linear-gradient(to right, #00A9E0, #00A9E0 50%, transparent 50%, transparent); */
+    height: 4px;
+    transition-duration: .75s;
+    position: absolute;
+    width: 150px;
+  }
+  .display-bar-right {
+    /* background-image: linear-gradient(to right, #00A9E0, #00A9E0 50%, transparent 50%, transparent); */
+    transition-duration: .75s;
+    height: 4px;
+    margin-left: 150px;
+    width: 150px;
+  }
   #empty {
     display: inline;
     flex-grow:0;
@@ -37,14 +58,47 @@
     display: flex;
     flex-direction:row;
   }
+  .mini-button {
+    
+    height: 25px;
+    width: 25px; 
+    border-radius: 50%; 
+    justify-content:flex-end;
+    display: flex;
+    margin: auto 11px auto auto;
+    background-image:url("arrow2.png");
+    background-size: 100%;
+  }
+
+  .mini-row-hidden {
+    height: 49.5px;
+    width: 100%;
+    background-color:#FEFEFE;
+    margin-top: 1px;
+    display: none;
+    color: #000;
+    flex-direction:row;
+  }
+
+  .mini-row-container {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+  }
+
   .primary {
     background-color: #00A9E0;
   }
   .primary-dark {
-    background-color: #003A94;
+    background-color: #035ca0;
+  }
+  .sub-tag {
+    margin: auto 0 auto 0px;
+    font-size: 1em;
+    display: flex; 
   }
   .tag {
-    margin: auto 0 auto 10px;
+    margin: auto 0 auto 5px;
     font-size: 1.275em;
     display: flex;
   }
@@ -63,15 +117,49 @@
   .row {
     width: 100%;
     height: 66px;
-    margin-top:1px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction:row;
   }
+
+  .row-line {
+    width: 100%;
+    height: 5px;
+    display: flex;
+    flex-direction:column;
+  }
+
+  .row-bottom-display-container {
+    height: 4px;
+    display: flex;
+    flex-direction:row;
+  }
+
+  .row-bottom-padding {
+    height: 1px;
+    width: 100%; 
+    display: flex;
+  }
+
+  .row:hover {
+    cursor: pointer;
+    transition-duration: 1s;
+  }
+
+  .row:hover > .button {
+    background-image:url("arrow2-no-circle.png");
+    background-color: #FFF;
+   transition-duration: 1s;
+  }
+
   .results_body{
     display: flex;
     flex-direction: column;
 
+  }
+
+  .top-mini-row {
+    margin-top: 0px;
   }
 
 

@@ -10,10 +10,10 @@ chrome.runtime.onMessage.addListener(function(request,sender){
 
 
 function onWindowLoad(){
-  chrome.tabs.executeScript(null,{ file: 'getKeyWordsFromPage.js'},function(){
+  chrome.tabs.executeScript(null, { file: "jquery-3.1.0.min.js" }, function() {
+    chrome.tabs.executeScript(null, { file: "getKeyWordsFromPage.js" });
   });
 }
-
 window.onLoad = onWindowLoad();
 
 
@@ -91,7 +91,33 @@ function adjustPopUp(wordCount){
 
   }
 
+var myDiv = document.getElementById('row0');
+var elements = document.getElementsByClassName('mini-row-hidden');
+var testCount = elements.length;
+var testL = document.getElementById('testL');
+var testR = document.getElementById('testR');
 
+console.log(elements);
+console.log(testCount);
+
+myDiv.onmouseover = function() { 
+
+  testL.style.width = '0';
+  testL.style.backgroundColor = '#00A9E0';
+  testR.style.marginLeft = '300px';
+  testR.style.backgroundColor = '#00A9E0';
+
+  setTimeout(function() {
+      elements[0].style.display = 'flex';
+      elements[1].style.display = 'flex';
+    }, 1000); // a delay of 1000ms = 1s
 
 }
+myDiv.onmouseleave = function() {
+  testL.style.width = '150px';
+  testR.style.marginLeft = '150px';
 
+  elements[0].style.display = 'none';
+  elements[1].style.display = 'none';
+  }
+}
