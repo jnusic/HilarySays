@@ -70,21 +70,131 @@ function textNodes(document){
 	for(var q = 0;q < splitText.length; q++){
 		var currentText = splitText[q]
 
-		if(currentText.match(/^(economy|money|business|cash)$/)){
+		//start Economy 
+		if(currentText.match(/^(tax|taxes|Tax|Taxes)$/)){
 			wordCount.economy++
+			wordCount.economy_a_fair_tax_system++
 		}
-		if(currentText.match(/^(education|study|learning|reading)$/)){
+		if(currentText.match(/^(infrastructure|Infrastructure|roads)$/)){
+			wordCount.economy++
+			wordCount.economy_fixing_americas_infrastructure++
+		}
+		if(currentText.match(/^(manufacturing|Manufacturing|factories)$/)){
+			wordCount.economy++
+			wordCount.economy_manufacturing++
+		}
+		if(currentText.match(/^(small\sbusiness|Small\sBusiness|entrepreneur|entrepreneurs|startup|startups)$/)){
+			wordCount.economy++
+			wordCount.economy_small_business++
+		}
+		if(currentText.match(/^(social\ssecurity|Social\sSecurity|medicare|Medicare)$/)){
+			wordCount.economy++
+			wordCount.economy_social_security_and_medicare++
+		}
+		if(currentText.match(/^(wall\sstreet|Wall\sStreet)$/)){
+			wordCount.economy++
+			wordCount.economy_wall_street_reform++
+		}
+		if(currentText.match(/^(economy|Economy)$/)){
+			wordCount.economy++
+			wordCount.economy_works_for_everyone++
+		}
+
+		//start Education 
+		if(currentText.match(/^(campus|Campus|College|college\scampus|sexual\sassault)$/)){
 			wordCount.education++
+			wordCount.education_campus_sexual_assault++
 		}
-		if(currentText.match(/^(environment|climate|earth|weather)$/)){
+		if(currentText.match(/^(college\sdebt|College\sDebt|student\sloans|college\scampus|Student\sLoans)$/)){
+			wordCount.education++
+			wordCount.education_college_debt++
+		}
+		if(currentText.match(/^(childhood|early\schildhood|child|children)$/)){
+			wordCount.education++
+			wordCount.education_early_childhood++
+		}
+		if(currentText.match(/^(campus|Campus|College|college\scampus|sexual\sassault)$/)){
+			wordCount.education++
+			wordCount.education_k_12++
+		}
+		if(currentText.match(/^(tech|Tech|technology|Technology|innovation)$/)){
+			wordCount.education++
+			wordCount.education_technology_and_innovation++
+		}
+
+		//start Enviroment
+		if(currentText.match(/^(climate|Climate|climate\schange|Climate\sChange)$/)){
 			wordCount.environment++
+			wordCount.environment_climate_change++
 		}
-		if(currentText.match(/^(equality|civil|rights|matter|peace)$/)){
+		if(currentText.match(/^(animals|animal\srights|Animals|wildlife|Wildlife|Animal\sRights)$/)){
+			wordCount.environment++
+			wordCount.environment_protecting_animals_and_wildlife++
+		}
+		if(currentText.match(/^(rural|rural\scommunities|Rural|Rural\sCommunities)$/)){
+			wordCount.environment++
+			wordCount.environment_rural_communities++
+		}
+
+		//start Equality
+		if(currentText.match(/^(campaign\sfinance|campaign\sfinancing|Campaign\sFinancing|Campaign\sFinance|donation|donations)$/)){
 			wordCount.equality++
+			wordCount.equality_campaign_finance_reform++
 		}
-		if(currentText.match(/^(health|energy|fat|sick)$/)){
+		if(currentText.match(/^(criminal\sjustice|criminal\sjustice\ssystem|Criminal\sJustice|jail\stime)$/)){
+			wordCount.equality++
+			wordCount.equality_criminal_justice_reform++
+		}
+		if(currentText.match(/^(immigration\sreform|Immigration\sreform|immigrants|illegal\simmigration|border|wall)$/)){
+			wordCount.equality++
+			wordCount.equality_immigration_reform++
+		}
+		if(currentText.match(/^(lgbt|LGBT|lgbt\srights|lgbt\sequality)$/)){
+			wordCount.equality++
+			wordCount.equality_lgbt_rights_and_equality++
+		}
+		if(currentText.match(/^(racism|Racist|Racism|racial\sjustice|affirmative\saction)$/)){
+			wordCount.equality++
+			wordCount.equality_racial_justice++
+		}
+		if(currentText.match(/^(voting|voting\sprocess|voting\srights|Voting|delegates|Delegates|superdelegates|Superdelegates)$/)){
+			wordCount.equality++
+			wordCount.equality_voting_rights++
+		}
+		if(currentText.match(/^(Women|women|womens\srights|women\sequality)$/)){
+			wordCount.equality++
+			wordCount.equality_womens_rights_and_opportunity++
+		}
+
+		//start Health
+		if(currentText.match(/^(addiction|substance\sabuse|Addiction|substance\suse|Substance\suse)$/)){
 			wordCount.health++
+			wordCount.health_addiction_and_substance_use++
 		}
+		if(currentText.match(/^(alzheimers|Alzheimers|Alzheimers\sresearch|alzheimers\sresearch)$/)){
+			wordCount.health++
+			wordCount.health_an_end_to_alzheimers++
+		}
+		if(currentText.match(/^(autism|autistic|Autistic|Autism)$/)){
+			wordCount.health++
+			wordCount.health_autism++
+		}
+		if(currentText.match(/^(disable|disability|Disable|Disability)$/)){
+			wordCount.health++
+			wordCount.health_disability_rights++
+		}
+		if(currentText.match(/^(health\scare|Health\scare|Health|health|obamacare|Obamacare)$/)){
+			wordCount.health++
+			wordCount.health_health_care++
+		}
+		if(currentText.match(/^(hiv|HIV|aids|AIDS)$/)){
+			wordCount.health++
+			wordCount.health_hiv_and_aids++
+		}
+
+
+
+
 		if(currentText.match(/^(job|work|business|career)$/)){
 			wordCount.jobs++
 		}
