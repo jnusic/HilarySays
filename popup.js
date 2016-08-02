@@ -68,7 +68,7 @@ function adjustPopUp(wordCount){
   ] 
 
 
- 
+ //one of these two match or sort functions does nothing 
   var unsortedMatched = tags.filter(function(map){
 
     if(map.count > 0){
@@ -90,7 +90,7 @@ function adjustPopUp(wordCount){
     document.getElementById('link'+i).innerHTML = "<a href=" + sortedMatched[i].link + " target='_blank' style='width:35px;height:35px'></a>";
 
   }
-
+//Sandbox for new JS 
 var myDiv = document.getElementById('row0');
 var elements = document.getElementsByClassName('mini-row-hidden');
 var testCount = elements.length;

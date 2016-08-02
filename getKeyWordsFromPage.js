@@ -192,15 +192,48 @@ function textNodes(document){
 			wordCount.health_hiv_and_aids++
 		}
 
-
-
-
-		if(currentText.match(/^(job|work|business|career)$/)){
+		//start Jobs
+		if(currentText.match(/^(labor|Labor|labor\srights|Labor\srights|unions|worker)$/)){
 			wordCount.jobs++
+			wordCount.jobs_labor_and_workers_rights++
 		}
-		if(currentText.match(/^(security|freedom|care|isis)$/)){
+		if(currentText.match(/^(maternity|Maternity|maternity\sleave|Maternity\sleave)$/)){
+			wordCount.jobs++
+			wordCount.jobs_paid_family_and_medical_leave++
+		}
+		if(currentText.match(/^(Vets|vets|Veterans|veterans|veteran|armed\sforces|army|Army)$/)){
+			wordCount.jobs++
+			wordCount.jobs_veterans_the_armed_forces_and_their_families
+		}
+		if(currentText.match(/^(wages|Wages|minimum\swage|salary|Salary|salaries)$/)){
+			wordCount.jobs++
+			wordCount.jobs_wages++
+		}
+		if(currentText.match(/^(workforce|Workforce|skills|Skills|training|skills\straining)$/)){
+			wordCount.jobs++
+			wordCount.jobs_workforce_skills_and_jobs_training++
+		} 
+
+
+		//start Security
+		if(currentText.match(/^(terrorist|Terrorist|isis|Isis|ISIS|terrorism)$/)){
 			wordCount.security++
+			wordCount.security_combating_terrorism++
 		}
+		if(currentText.match(/^(gun|Gun|guns|Guns|second\samendment|Second\samendment)$/)){
+			wordCount.security++
+			wordCount.security_gun_violence++
+		}
+		if(currentText.match(/^(military|Military|defense|Defense|national\sdefense)$/)){
+			wordCount.security++
+			wordCount.security_miliary_and_defense++
+		}
+		if(currentText.match(/^(national\ssecurity|security|Security|secure|safe|Safe)$/)){
+			wordCount.security++
+			wordCount.security_national_security++
+		}
+
+		//tbd
 		if(currentText.match(/^(tech|startup|internet|online)$/)){
 			wordCount.tech++
 		}
