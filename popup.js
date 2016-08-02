@@ -65,9 +65,30 @@ function adjustPopUp(wordCount){
       link:"https://www.hillaryclinton.com/issues/technology-and-innovation/",
       count: wordCount.tech
     }
+  ]
+
+  var subTags = [
+    { 
+      text:"ClimateChange",
+      tag:"Enviroment",
+      link:"https://www.hillaryclinton.com/issues/climate/",
+      count: wordCount.environment_climate_change
+    },
+    { 
+      text:"ProtectingAnimals&Wildlife",
+      tag:"Enviroment",
+      link:"https://www.hillaryclinton.com/issues/protecting-animals-and-wildlife/",
+      count: wordCount.environment_protecting_animals_and_wildlife
+    },
+    { 
+      text:"RuralCommunities",
+      tag:"Enviroment",
+      link:"https://www.hillaryclinton.com/issues/rural-communities/",
+      count: wordCount.environment_rural_communities
+    }
   ] 
 
-
+console.log(subTags);
  //one of these two match or sort functions does nothing 
   var unsortedMatched = tags.filter(function(map){
 

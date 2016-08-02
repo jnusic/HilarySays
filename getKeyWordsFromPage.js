@@ -122,7 +122,7 @@ function textNodes(document){
 			wordCount.education_technology_and_innovation++
 		}
 
-		//start Enviroment
+		//start environment
 		if(currentText.match(/^(climate|Climate|climate\schange|Climate\sChange)$/)){
 			wordCount.environment++
 			wordCount.environment_climate_change++
