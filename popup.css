@@ -128,15 +128,12 @@
     height: 5px;
     position: relative;
     display: inline-block;
-    
-    -webkit-transition: color .5s;
-          transition: color .5s;
+    transition: color .5s;
     
 
 
   }
   .row-line:before{
-    
     content: '';
     position: absolute;
     top: 0; left: 0;
@@ -146,15 +143,12 @@
     z-index: -1;
     transform:scaleX(0);
     transition:  transform .5s;
-    
   }
 
 
 
-  .row-line:hover:before {
-    -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-          transform: scaleX(1);
+  .row:hover + .row-line:before {
+    transform: scaleX(1);
   }
 
 
@@ -195,35 +189,7 @@
 
 
   
-  #row0{
-    display: flex;
-  }
-  
-  #row1{
-    display: flex;
-  }
-  
-  #row2{
-    display: flex;
-  }
-  
-  #row3{
-    display: flex;
-  }
-  
-  #row4{
-    display: flex;
-  }
-  
-  #row5{
-    display: flex;
-  }
-  
-  #row6{
-    display: flex;
-  }
-  
-  #row7{
+  .row{
     display: flex;
   }
 
