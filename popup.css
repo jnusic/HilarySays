@@ -9,6 +9,13 @@
     background-color: #EEEEEE;
     margin: 0; 
   }
+  .resultContainer{
+    display: flex;
+    flex-direction:column;
+    justifyContent: flex-start;
+    alignItems: center;
+
+  }
   .ampersand_color {
     color: #035ca0;
   }
@@ -70,21 +77,17 @@
     background-size: 100%;
   }
 
-  .mini-row-hidden {
-    height: 49.5px;
-    width: 100%;
-    background-color:#FEFEFE;
-    margin-top: 1px;
-    display: none;
-    color: #000;
-    flex-direction:row;
-  }
 
-  .mini-row-container {
-    flex-direction: column;
-    width: 100%;
-    display: flex;
-  }
+
+
+
+
+ 
+
+
+
+
+
 
   .primary {
     background-color: #00A9E0;
@@ -123,6 +126,25 @@
   }
 
 
+
+
+
+ .mini-row-hidden {
+    height: 49.5px;
+    width: 100%;
+    background-color:#FEFEFE;
+    margin-top: 1px;
+    display: flex;
+    color: #000;
+    flex-direction:row;
+  }
+
+  .mini-row-container {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+  }
+
   .row-line {
     width: 100%;
     height: 5px;
@@ -150,6 +172,14 @@
   .row:hover + .row-line:before {
     transform: scaleX(1);
   }
+ 
+  .row:hover + .mini-row-hidden{
+    display: flex;
+  }
+ 
+
+
+
 
 
 
@@ -189,11 +219,6 @@
 
 
   
-  .row{
-    display: flex;
-  }
 
 
 
-
-  
