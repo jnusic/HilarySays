@@ -342,7 +342,10 @@ function adjustPopUp(wordCount){
         `</div>`;  
 
     if(sortedMatched[i].subTags.length > 0){
-       $(".results_body").append(resultsDiv);  
+     
+      var resultsBody = document.getElementById("results_body");
+      resultsBody.insertAdjacentHTML("beforeend",resultsDiv);
+      //resultsBody.append(resultsDiv);  
     }                  
   }
 
@@ -366,19 +369,22 @@ function adjustPopUp(wordCount){
                           `</div>`;
 
     
-      var SubContainerName = `#`+sortedMatched[x].text+`SubContainer`;
 
       if(sortedMatched[x].subTags[y].count > 0 ){
-        $(SubContainerName).append(subResultsDiv);            
+        //var SubContainerName = `"`+sortedMatched[x].text+`SubContainer"`;
+        //var addResultsToSubContainer = document.getElementById(SubContainerName);
+        //console.log(SubContainerName);
+        //console.log(addResultsToSubContainer);
+        console.log("EducationSubContainer");
+        console.log(sortedMatched[x].text+`SubContainer`);
+        document.getElementById(sortedMatched[x].text+`SubContainer`).insertAdjacentHTML("beforeend",subResultsDiv);
+        //addResultsToSubContainer.append(subResultsDiv);            
       }                     
     }
   }
-   
-  
- 
- 
+}
 
- //Hover function for EDUCATION div
+//Hover function for EDUCATION div
    $(function() {
      $('#EducationSubContainer').hide();
       var timeoutId;
@@ -400,6 +406,7 @@ function adjustPopUp(wordCount){
           }
       });
   });
+/*   
 //hover function for ECONOMY div
  $(function() {
      $('#EconomySubContainer').hide();
@@ -422,9 +429,7 @@ function adjustPopUp(wordCount){
           }
       });
   });
-
-
- //Hover function for ENVIRONMENT div
+//Hover function for ENVIRONMENT div
   $(function() {
      $('#EnviromentSubContainer').hide();
       var timeoutId;
@@ -446,7 +451,7 @@ function adjustPopUp(wordCount){
           }
       });
   });
-  //Hover function for EQUALITY div
+//Hover function for EQUALITY div
   $(function() {
      $('#EqualitySubContainer').hide();
       var timeoutId;
@@ -538,3 +543,4 @@ function adjustPopUp(wordCount){
 }
 
 
+*/
