@@ -17,8 +17,6 @@ function onWindowLoad(){
 
 window.onLoad = onWindowLoad();
 
-
-
 //handles the data from getKeyWordsFromPage
 function adjustPopUp(wordCount){
 
@@ -303,6 +301,17 @@ function adjustPopUp(wordCount){
       
     }
   ]
+
+var tagsTotal = 0;
+
+for (var i=0;i<7;i++) {
+  if (tags[i].count > 0) {
+    tagsTotal++;
+  }
+};
+console.log(tagsTotal);
+
+chrome.browserAction.setIcon({path:"icon" + tagsTotal + ".png"});
 
   //Sort functions 
   var unsortedMatched = tags.filter(function(map){
