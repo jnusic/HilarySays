@@ -351,7 +351,10 @@ chrome.browserAction.setIcon({path:"icon" + tagsTotal + ".png"});
         `</div>`;  
 
     if(sortedMatched[i].subTags.length > 0){
-       $(".results_body").append(resultsDiv);  
+     
+      var resultsBody = document.getElementById("results_body");
+      resultsBody.insertAdjacentHTML("beforeend",resultsDiv);
+      //resultsBody.append(resultsDiv);  
     }                  
   }
 
@@ -374,176 +377,10 @@ chrome.browserAction.setIcon({path:"icon" + tagsTotal + ".png"});
                               `</div>`+
                           `</div>`;
 
-    
-      var SubContainerName = `#`+sortedMatched[x].text+`SubContainer`;
-
       if(sortedMatched[x].subTags[y].count > 0 ){
-        $(SubContainerName).append(subResultsDiv);            
+        document.getElementById(sortedMatched[x].text+`SubContainer`).insertAdjacentHTML("beforeend",subResultsDiv);
       }                     
     }
   }
-   
-  
- 
- 
-
- //Hover function for EDUCATION div
-   $(function() {
-     $('#EducationSubContainer').hide();
-      var timeoutId;
-      $("#EducationResults, #EducationSubContainer").hover(function() {
-          if (!timeoutId) {
-              timeoutId = window.setTimeout(function() {
-                  timeoutId = null;
-                  $("#EducationSubContainer ").slideDown('slow');
-             }, 700);
-          }
-      },
-      function () {
-          if (timeoutId) {
-              window.clearTimeout(timeoutId);
-              timeoutId = null;
-          }
-          else{
-             $('#EducationSubContainer').slideUp("slow");
-          }
-      });
-  });
-//hover function for ECONOMY div
- $(function() {
-     $('#EconomySubContainer').hide();
-      var timeoutId;
-      $("#EconomyResults, #EconomySubContainer").hover(function() {
-          if (!timeoutId) {
-              timeoutId = window.setTimeout(function() {
-                  timeoutId = null;
-                  $("#EconomySubContainer ").slideDown('slow');
-             }, 700);
-          }
-      },
-      function () {
-          if (timeoutId) {
-              window.clearTimeout(timeoutId);
-              timeoutId = null;
-          }
-          else{
-             $('#EconomySubContainer').slideUp("slow");
-          }
-      });
-  });
-
-
- //Hover function for ENVIRONMENT div
-  $(function() {
-     $('#EnviromentSubContainer').hide();
-      var timeoutId;
-      $("#EnviromentResults, #EnviromentSubContainer").hover(function() {
-          if (!timeoutId) {
-              timeoutId = window.setTimeout(function() {
-                  timeoutId = null;
-                  $("#EnviromentSubContainer ").slideDown('slow');
-             }, 700);
-          }
-      },
-      function () {
-          if (timeoutId) {
-              window.clearTimeout(timeoutId);
-              timeoutId = null;
-          }
-          else{
-             $('#EnviromentSubContainer').slideUp("slow");
-          }
-      });
-  });
-  //Hover function for EQUALITY div
-  $(function() {
-     $('#EqualitySubContainer').hide();
-      var timeoutId;
-      $("#EqualityResults, #EqualitySubContainer").hover(function() {
-          if (!timeoutId) {
-              timeoutId = window.setTimeout(function() {
-                  timeoutId = null;
-                  $("#EqualitySubContainer ").slideDown('slow');
-             }, 700);
-          }
-      },
-      function () {
-          if (timeoutId) {
-              window.clearTimeout(timeoutId);
-              timeoutId = null;
-          }
-          else{
-             $('#EqualitySubContainer').slideUp("slow");
-          }
-      });
-  });
-//Hover function for HEALTH div
-  $(function() {
-     $('#HealthSubContainer').hide();
-      var timeoutId;
-      $("#HealthResults, #HealthSubContainer").hover(function() {
-          if (!timeoutId) {
-              timeoutId = window.setTimeout(function() {
-                  timeoutId = null;
-                  $("#HealthSubContainer ").slideDown('slow');
-             }, 700);
-          }
-      },
-      function () {
-          if (timeoutId) {
-              window.clearTimeout(timeoutId);
-              timeoutId = null;
-          }
-          else{
-             $('#HealthSubContainer').slideUp("slow");
-          }
-      });
-  });
-//Hover function for JOBS div
-  $(function() {
-     $('#JobsSubContainer').hide();
-      var timeoutId;
-      $("#JobsResults, #JobsSubContainer").hover(function() {
-          if (!timeoutId) {
-              timeoutId = window.setTimeout(function() {
-                  timeoutId = null;
-                  $("#JobsSubContainer ").slideDown('slow');
-             }, 700);
-          }
-      },
-      function () {
-          if (timeoutId) {
-              window.clearTimeout(timeoutId);
-              timeoutId = null;
-          }
-          else{
-             $('#JobsSubContainer').slideUp("slow");
-          }
-      });
-  });
-//Hover function for SECURITY div
-  $(function() {
-     $('#SecuritySubContainer').hide();
-      var timeoutId;
-      $("#SecurityResults, #SecuritySubContainer").hover(function() {
-          if (!timeoutId) {
-              timeoutId = window.setTimeout(function() {
-                  timeoutId = null;
-                  $("#SecuritySubContainer ").slideDown('slow');
-             }, 700);
-          }
-      },
-      function () {
-          if (timeoutId) {
-              window.clearTimeout(timeoutId);
-              timeoutId = null;
-          }
-          else{
-             $('#SecuritySubContainer').slideUp("slow");
-          }
-      });
-  });
-
 }
-
 
