@@ -245,72 +245,72 @@
   
   #EducationSubContainer{
     max-height: 0;
-    transition: max-height 10s ease-out;
+    transition: max-height 20s ease-out;
   }
 
   #EducationResults:hover  #EducationSubContainer{
-    ransition: max-height 2s ease-in;
+    ransition: max-height 5s ease-in;
     max-height: 3000px;
   }
 
 
   #EnviromentSubContainer{
     max-height: 0;
-    transition: max-height 10s ease-out;
+    transition: max-height 20s ease-out;
   }
 
   #EnviromentResults:hover  #EnviromentSubContainer{
-    ransition: max-height 2s ease-in;
+    ransition: max-height 5s ease-in;
     max-height: 3000px;
   }
 
   #EqualitySubContainer{
     max-height: 0;
-    transition: max-height 10s ease-out;
+    transition: max-height 20s ease-out;
   }
 
   #EqualityResults:hover  #EqualitySubContainer{
-    ransition: max-height 2s ease-in;
+    ransition: max-height 5s ease-in;
     max-height: 3000px;
   }
 
   #HealthSubContainer{
     max-height: 0;
-    transition: max-height 10s ease-out;
+    transition: max-height 20s ease-out;
   }
 
   #HealthResults:hover  #HealthSubContainer{
-    ransition: max-height 2s ease-in;
+    ransition: max-height 5s ease-in;
     max-height: 3000px;
   }
 
   #JobsSubContainer{
     max-height: 0;
-    transition: max-height 10s ease-out;
+    transition: max-height 20s ease-out;
   }
 
   #JobsResults:hover  #JobsSubContainer{
-    ransition: max-height 2s ease-in;
+    ransition: max-height 5s ease-in;
     max-height: 3000px;
   }
 
   #SecuritySubContainer{
     max-height: 0;
-    transition: max-height 10s ease-out;
+    transition: max-height 20s ease-out;
   }
 
   #SecurityResults:hover  #SecuritySubContainer{
-    ransition: max-height 2s ease-in;
+    ransition: max-height 5s ease-in;
     max-height: 3000px;
   }
 
   #EconomySubContainer{
     max-height: 0;
-    transition: max-height 10s ease-out;
+    transition: max-height 20s ease-out;
   }
 
   #EconomyResults:hover  #EconomySubContainer{
-    ransition: max-height 2s ease-in;
+    ransition: max-height 5s ease-in;
     max-height: 3000px;
   }
 
