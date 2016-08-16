@@ -79,7 +79,7 @@ if (sortedMatched.length > 0) {
 
   document.getElementById(lastTag + "Results").onmouseover=function(){
     document.getElementById(lastTag + "SubContainer").style.display = "flex";
-  };
+    };
 
   document.getElementById(lastTag + "Results").onmouseleave=function(){
     document.getElementById(lastTag + "SubContainer").style.display = "none";
