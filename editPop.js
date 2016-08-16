@@ -3,6 +3,7 @@
 
 chrome.runtime.sendMessage({action: "editPop"},function(response){
   console.log(response);
+  console.log(response.length);
   adjustPopUp(response);
 });
 
@@ -15,7 +16,7 @@ function adjustPopUp(sortedMatched){
   
 
   for(var i =0;i < sortedMatched.length;i++){
-    document.getElementById('empty').style.display = 'none';
+    //document.getElementById('empty').style.display = 'none';
    
     var resultsDiv = 
         `<div class="resultContainer" id="`+sortedMatched[i].text+`Results">`+ 
@@ -70,4 +71,13 @@ function adjustPopUp(sortedMatched){
       }                     
     }
   }
+
+if (sortedMatched.length > 0) {
+  var last = parseInt(sortedMatched.length);
+  var lastTag = sortedMatched[last-1].text;
+  document.getElementById(lastTag + "SubContainer").style.display = "none";
+  console.log(last);
+  console.log(lastTag);
+};
+
 }
