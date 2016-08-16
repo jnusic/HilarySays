@@ -76,6 +76,19 @@ if (sortedMatched.length > 0) {
   var last = parseInt(sortedMatched.length);
   var lastTag = sortedMatched[last-1].text;
   document.getElementById(lastTag + "SubContainer").style.display = "none";
+
+  document.getElementById(lastTag + "Results").onmouseover=function(){
+    document.getElementById(lastTag + "SubContainer").style.display = "flex";
+  };
+
+  document.getElementById(lastTag + "Results").onmouseleave=function(){
+    document.getElementById(lastTag + "SubContainer").style.display = "none";
+  };
+
+  document.getElementById(lastTag + "SubContainer").onmouseleave=function(){
+    document.getElementById(lastTag + "SubContainer").style.display = "flex";
+  };
+
   console.log(last);
   console.log(lastTag);
 };

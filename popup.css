@@ -221,6 +221,21 @@
     margin-top: 0px;
   }
 
+  .shirt_button {
+    display: flex;
+    font-size: 1em;
+    color: #FFF;
+    margin: 25px auto 0px auto;
+    padding: 12px 18px;
+    background-color: #00A9E0;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .shirt_button:hover {
+    background-color:#0057B8;
+  }
+
   .shirt_image_container {
     background-image:url("haramabe_image.png");
     background-size: 100%;
