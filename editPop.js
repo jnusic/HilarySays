@@ -80,4 +80,9 @@ if (sortedMatched.length > 0) {
   console.log(lastTag);
 };
 
+document.getElementById("empty").onclick=function(){
+  document.getElementById("empty").style.display="none";
+  document.getElementById("shirt_control").style.display="flex";
+};
+
 }
