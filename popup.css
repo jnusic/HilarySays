@@ -56,11 +56,14 @@
   #empty {
     display: flex;
     font-size: 1em;
-    color: #607D8B;
+    color: #e4002b;
     margin: 2px 0px 0px 0px;
     padding: 0px 66px 0px 66px;
     background-color: #fff;
     cursor: pointer;
+  }
+  #empty:hover {
+    color: #00A9E0;
   }
   .header {
     height: 100px; 
@@ -233,7 +236,7 @@
   }
 
   .shirt_button:hover {
-    background-color:#0057B8;
+    background-color:#e4002b;
   }
 
   .shirt_image_container {
